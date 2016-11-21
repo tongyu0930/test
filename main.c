@@ -24,9 +24,9 @@ void init(void){
 	
 	//DDRD &=~(1<<PD6);DDRD &=~(1<<PD5);DDRC &=~(1<<PC0);
 	//DDRC &=~(1<<PC1);DDRC &=~(1<<PC2);DDRC &=~(1<<PC3);
-	DDRC &=~(1<<PC4);DDRC &=~(1<<PC5);//8 light barriers are input
+	//DDRC &=~(1<<PC4);DDRC &=~(1<<PC5);//8 light barriers are input
 
-	PORTC |= 255 ;  
+	//PORTC |= 255 ;  
 	PORTD |= 255 ;  // pullup On
 	
 	DDRB |= (1<< DDB1); 
