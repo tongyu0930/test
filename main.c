@@ -32,7 +32,7 @@ void init(void){
 	DDRB |= (1<< DDB1); 
 	PORTB &= ~(1<<PB1); //servo motor
 
-	TCCR1A |= (1<<WGM11)|(1 << COM1A1);		//timer1//Fast PWM //non-inverting mode
+	//TCCR1A |= (1<<WGM11)|(1 << COM1A1);		//timer1//Fast PWM //non-inverting mode
 	TCCR1B |= (1<<WGM13)|(1<<WGM12)|(1<<CS11);	//prescaler: 8 //top: ICR1
 
 	TCCR0 = (1<<CS00)|(1<<CS02); //1024 for timer0
